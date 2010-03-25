@@ -25,7 +25,8 @@ use TWiki::Contrib::Build;
 
 # Declare our build package
 package BuildBuild;
-use base qw( TWiki::Contrib::Build );
+use TWiki::Contrib::Build;
+our @ISA = qw( TWiki::Contrib::Build );
 
 sub new {
     my $class = shift;

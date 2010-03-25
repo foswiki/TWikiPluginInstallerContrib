@@ -2,7 +2,8 @@ use strict;
 
 package TWikiPluginInstallerContribTests;
 
-use base qw(FoswikiTestCase);
+use FoswikiTestCase;
+our @ISA = qw( FoswikiTestCase );
 
 use strict;
 use TWiki;
